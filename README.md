@@ -2,8 +2,7 @@
 
 My jorunal of getting through __JavaScript30__ challenge by *Wes Bos*.
 
-### Day 01 - Drum Kit
-===
+## Day 01 - Drum Kit
 What did I learn?
 
 + key events in javascript
