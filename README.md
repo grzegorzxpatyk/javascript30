@@ -7,4 +7,4 @@ What did I learn?
 
 + key events in javascript
 + element[attribute="value"] syntax works the same as in css
-+ `transitionend` event - gets fired when the transition of the element ends
++ `transitionend` event - gets fired when the transition of the element ends ([docs](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitionend_event))
