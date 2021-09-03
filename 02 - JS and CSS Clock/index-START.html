@@ -65,10 +65,24 @@
       background: black;
       position: absolute;
       top: 50%;
+      border-radius: 30%;
       transform-origin: 100%;
       transform: rotate(90deg);
       transition: all .1s;
       transition-timing-function: cubic-bezier(0, 2.2, 0, 4.38);
+    }
+
+    .second-hand {
+      height: 5px;
+      background-color: rgb(122, 41, 41);
+    }
+
+    .min-hand {
+      background-color: rgb(27, 27, 27);
+    }
+
+    .hour-hand {
+      height: 9px;
     }
   </style>
 
@@ -76,6 +90,7 @@
     const secondHand = document.querySelector('.second-hand');
     const minuteHand = document.querySelector('.min-hand');
     const hourHand = document.querySelector('.hour-hand');
+    const hands = document.querySelectorAll('.hand');
 
     function setDate() {
       const now = new Date();
@@ -90,6 +105,24 @@
       secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
       minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
       hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
+
+      if (secondsDegrees === 90) {
+        secondHand.style.transition = 'all 0s cubic-bezier(0, 2.2, 0, 4.38)';
+      } else {
+        secondHand.style.transition = 'all .1s cubic-bezier(0, 2.2, 0, 4.38)';
+      }
+
+      if (minutesDegrees === 90) {
+        minuteHand.style.transition = 'all 0s cubic-bezier(0, 2.2, 0, 4.38)';
+      } else {
+        minuteHand.style.transition = 'all .1s cubic-bezier(0, 2.2, 0, 4.38)';
+      }
+
+      if (hoursDegrees === 90) {
+        hourHand.style.transition = 'all 0s cubic-bezier(0, 2.2, 0, 4.38)';
+      } else {
+        hourHand.style.transition = 'all .1s cubic-bezier(0, 2.2, 0, 4.38)';
+      }
     }
 
     setInterval(setDate, 1000);
