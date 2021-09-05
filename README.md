@@ -1,6 +1,7 @@
 # JavaScript30
 
 My jorunal of getting through __JavaScript30__ challenge by *Wes Bos*.
+Notes of what new I've learned in every day.
 
 ## Day 01 - Drum Kit
 What did I learn?
