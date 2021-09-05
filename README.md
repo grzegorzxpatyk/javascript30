@@ -16,4 +16,12 @@ New stuff:
 + cubic bezier icon in dev tools let you experiment with different timing functions
 + `item.style.transform` can take a _template literal_ string
 + _Date_ class & `getSeconds`, `getMinutes` and `getHours` methods
-+ setInterval(callback function, interval in miliseconds);
++ `setInterval(callback function, interval in miliseconds);`
+
+## Day 03 - Update CSS Variables with JS
+
++ NodeList ≠ Array - lacks of methods that an array have 
++ you can cast NodeList to an Array in JS
++ `this.dataset` returns all _data-_ prefixed attributes of the referenced html element
++ `this.dataset.attribute` returns the value of the particular referenced attribute
++ `element.style.setProperty('propertyName', 'propertyValue')` - accepts template literals!
