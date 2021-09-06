@@ -25,3 +25,9 @@ New stuff:
 + `this.dataset` returns all _data-_ prefixed attributes of the referenced html element
 + `this.dataset.attribute` returns the value of the particular referenced attribute
 + `element.style.setProperty('propertyName', 'propertyValue')` - accepts template literals!
+
+## Day 04 - Array Cardio Day 1
+
++ `querySelector` and `querySelectorAll` returns a NodeList instead of an array. NodeList has only `forEach()` method.
++ `Array.prototype.sort()` syntax with ternary operator - `return a > b ? 1 : -1`
++ `Array.prototype.reduce()` method is a good way for counting instances of an element in an array
