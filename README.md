@@ -32,3 +32,12 @@ New stuff:
 + `querySelector` and `querySelectorAll` returns a NodeList instead of an array. NodeList has only `forEach()` method.
 + `Array.prototype.sort()` syntax with ternary operator - `return a > b ? 1 : -1`
 + `Array.prototype.reduce()` method is a good way for counting instances of an element in an array
+
+## Day 05 - Flex Panels Image Gallery
+
++ creating a multiple EventListeners for each element of the node list with 
+````javascript
+elements.forEach(element => element.addEventListener('click', function));
+````
++  flex box - flex: value let's you control the increased/decreased value of a flex element
++ transitionend propertyName let's you stack and control the transitions
