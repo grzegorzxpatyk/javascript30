@@ -149,19 +149,21 @@
   </div>
 
   <script>
-    const panels = document.querySelectorAll('.panel');
+    const panels = document.querySelectorAll('.panel'); // select all of the elements with .panel class
 
     function toggleOpen() {
-      this.classList.toggle('open');
+      this.classList.toggle('open'); // add/remove class .open 
     }
 
     function toggleActive(e) {
       if (e.propertyName.includes('flex')) {
-        this.classList.toggle('open-active');
+        this.classList.toggle('open-active'); // add/remove class .open-active 
       }
     }
 
-    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    // for each element with .panel class there's a event listener, listening for a click
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen)); 
+    // after the transition of flex-grow is finished, the transition of translating text starts
     panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
   </script>
 
