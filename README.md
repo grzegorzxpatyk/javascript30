@@ -41,3 +41,9 @@ elements.forEach(element => element.addEventListener('click', function));
 ````
 +  flex box - `flex: value` let's you control the increased/decreased value of a flex element
 + transitionend `propertyName` let's you stack and control the transitions
+
+## Day 06 - Type Ahead
+
++ fetching data with `fetch()` using promises etc.
++ regular expressions
++ `String.prototype.replace()` with use of innerHTML lets you highlight the matching suggestion in search bar
