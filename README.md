@@ -47,3 +47,21 @@ elements.forEach(element => element.addEventListener('click', function));
 + fetching data with `fetch()` using promises etc.
 + regular expressions
 + `String.prototype.replace()` with use of innerHTML lets you highlight the matching suggestion in search bar
+
+## Day 07 - Array Cardio Day 2
+
++ Spread operator in arrays: 
+````javascript
+    const newComments = [
+        ...comments.slice(0, index), // the spread operator
+        ...comments.slice(index + 1)
+    ];
+````
++ `console.table();`
++ repetition of the methods:
+````javascript
+Array.prototype.some()
+Array.prototype.every()
+Array.prototype.find()
+Array.prototype.findIndex()
+````
