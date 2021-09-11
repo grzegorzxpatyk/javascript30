@@ -16,12 +16,12 @@
   ctx.strokeStyle = '#BADA55';
   ctx.lineJoin = 'round';
   ctx.lineCap = 'round';
-  ctx.lineWidth = 50;
 
   let isDrawing = false;
   let lastX = 0;
   let lastY = 0;
   let hue = 0;
+  let direction = true;
 
   function draw(e) {
     if (!isDrawing) return; // function stops when canvas is not moused
@@ -39,6 +39,17 @@
     hue++;
     if (hue >= 360) {
       hue = 0;
+    }
+
+    // lineWidth changing
+    if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+      direction = !direction;
+    }
+
+    if (direction) {
+      ctx.lineWidth++;
+    } else {
+      ctx.lineWidth--;
     }
   }
 
