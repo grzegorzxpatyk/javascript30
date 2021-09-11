@@ -65,3 +65,20 @@ Array.prototype.every()
 Array.prototype.find()
 Array.prototype.findIndex()
 ````
+
+## Day 08 - HTML5 Canvas
+
++ Learn how to set HTML5 Canvas
++ Mouse events:
+````javascript
+mousedown/mouseup
+mouseover/mouseout
+mousemove
+````
++ Canvas context properties: 
+````javascript
+.lineWidth
+.lineCap
+.lineJoin
+.strokeStyle
+````
