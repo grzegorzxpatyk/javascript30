@@ -54,12 +54,12 @@
   }
 
   canvas.addEventListener('mousedown', (e) => {
-    isDrawing = true;
-    [lastX, lastY] = [e.offsetX, e.offsetY];
+    isDrawing = true; // starts the stroke
+    [lastX, lastY] = [e.offsetX, e.offsetY]; // sets the stroke starting point
   });
-  canvas.addEventListener('mousemove', draw);
-  canvas.addEventListener('mouseup', () => isDrawing = false);
-  canvas.addEventListener('mouseout', () => isDrawing = false);
+  canvas.addEventListener('mousemove', draw); // update the stroke's path
+  canvas.addEventListener('mouseup', () => isDrawing = false); // stops drawing
+  canvas.addEventListener('mouseout', () => isDrawing = false); // stops drawing
 
 </script>
 
