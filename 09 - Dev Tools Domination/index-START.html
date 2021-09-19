@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Console Tricks!</title>
 </head>
+
 <body>
 
   <p onClick="makeGreen()">×BREAK×DOWN×</p>
@@ -11,36 +13,79 @@
   <script>
     const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
 
+    const p = document.querySelector('p');
+
     function makeGreen() {
-      const p = document.querySelector('p');
       p.style.color = '#BADA55';
       p.style.fontSize = '50px';
     }
 
     // Regular
+    // console.log('hello'); // just a regular console.log() statement
 
     // Interpolated
+    // console.log('Hello I am a %s string!', 'chujowy');
+    // similar to java's printf
+    // let someVariable = 'chujowy';
+    // console.log(`Hello I am a ${someVariable} string!`);
+    // can achieve the same using backticks and template literals
 
     // Styled
+    // console.log('%c I am some great text', 'font-size: 30px; background: red');
 
     // warning!
+    console.warn('Oh Nooo!');
 
     // Error :|
+    console.error('Shit!');
 
     // Info
+    console.info('Check out this fun fact!');
 
     // Testing
+    console.assert(1 === 2, 'That\'s wrong!');
 
     // clearing
+    console.clear();
 
     // Viewing DOM Elements
+    console.log(p);
+    console.dir(p);
 
     // Grouping together
+    dogs.forEach(dog => {
+      console.group(`${dog.name}`); // this or .groupCollapsed()
+      console.log(`This is ${dog.name}`);
+      console.log(`${dog.name} is ${dog.age} years old.`);
+      console.log(`${dog.name} is ${dog.age * 7} dog years old.`);
+      console.groupEnd(`${dog.name}`); // same string 
+    });
 
     // counting
+    console.count('WES');
+    console.count('WES');
+    console.count('Stevo');
+    console.count('WES');
+    console.count('WES');
+    console.count('Stevo');
+    console.count('WES');
 
     // timing
+    console.time('fetching data');
+    fetch('https://api.github.com/users/grzegorzp4tyk')
+      .then(data => data.json())
+      .then(data => {
+        console.timeEnd('fetching data'); //same string as in the .time()
+        console.log(data);
+      });
 
+    // const github = document.createElement('p');
+    // document.body.appendChild(github);
+    // const githubLogin = apiInfo.login;
+    // github.innerHTML = `Github user: ${githubLogin}`;
+
+    console.table(dogs);
   </script>
 </body>
+
 </html>
