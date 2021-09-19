@@ -82,3 +82,18 @@ mousemove
 .lineJoin
 .strokeStyle
 ````
+
+## Day 09 - 14 Must Know Dev Tools Tricks
+
++ `console.log()`
++ `console.log('%c That\'s going to be a styled string', 'some styling in css')`
++ `console.warn('Warning message!')`
++ `console.error('Error message!')`
++ `console.info('Some fun fact.')`
++ `console.assert(condition, that what happens when the condition is false)`
++ `console.clear()`
++ `console.dir(element)`
++ `console.group()` and `console.groupCollapse()`
++ `console.count()`
++ `console.time()` and `console.timeEnd()`
++ `console.table()`
