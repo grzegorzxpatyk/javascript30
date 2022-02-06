@@ -3,16 +3,11 @@
 My journal of getting through [**JavaScript30**](https://javascript30.com) challenge by _Wes Bos_.
 Notes of what new I've learned in every day. I'm trying to note everything, even most obvious things, that seemed useful when completing the challenge, so I will remember them better.
 
-<<<<<<< HEAD
-
 ## [Day 01 - Drum Kit](https://grzegorzp4tyk.github.io/javascript30/01%20-%20JavaScript%20Drum%20Kit/index-START.html)
 
 =======
 
 ## Day 01 - Drum Kit
-
-> > > > > > > day-ten
-> > > > > > > What did I learn?
 
 -   key events in javascript
 -   element[attribute="value"] syntax works the same as in css
