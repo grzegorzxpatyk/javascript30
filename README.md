@@ -5,10 +5,6 @@ Notes of what new I've learned in every day. I'm trying to note everything, even
 
 ## [Day 01 - Drum Kit](https://grzegorzp4tyk.github.io/javascript30/01%20-%20JavaScript%20Drum%20Kit/index-START.html)
 
-=======
-
-## Day 01 - Drum Kit
-
 -   key events in javascript
 -   element[attribute="value"] syntax works the same as in css
 -   `transitionend` event - gets fired when the transition of the element ends ([docs](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitionend_event))
